@@ -40,5 +40,8 @@ int main(){
 
     cout<<"Registros realizados"<<endl;
     lb.mostrar();
+
+    lb.respaldar_tabla();
+    lb.respaldar();
     return 0;
 }
