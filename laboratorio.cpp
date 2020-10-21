@@ -15,13 +15,20 @@ void Laboratorio::addComputadora(const Computadora &c){
 }
 
 void Laboratorio::mostrar(){
+    cout << left;
+    cout << setw(18) << "Nombre del equipo";
+    cout << setw(18) << "Sistema operativo";
+    cout << setw(8) << "RAM";
+    cout << setw(16) << "Memoria de video";
+    cout << endl;
     for (size_t i = 0; i < cont; i++){
         Computadora &c = vect[i];
-        cout<<"Nombre del equipo: "<<c.getNombre()<<endl;
+        cout << c;
+        /*cout<<"Nombre del equipo: "<<c.getNombre()<<endl;
         cout<<"Sistema operativo: "<<c.getSistema()<<endl;
         cout<<"RAM: "<<c.getRam()<<endl;
         cout<<"Memoria de video dedicada: "<<c.getMemoriavideo()<<endl;
-        cout<<endl;
+        cout<<endl;*/
     }
-    
+
 }

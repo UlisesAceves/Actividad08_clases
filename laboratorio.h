@@ -12,6 +12,13 @@ public:
     Laboratorio();
     void addComputadora(const Computadora &c);
     void mostrar();
+
+    friend Laboratorio& operator<<(Laboratorio &l, const Computadora &c)
+    {
+        l.addComputadora(c);
+
+        return l;
+    }
 };
 
 
