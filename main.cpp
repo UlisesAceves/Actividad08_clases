@@ -5,6 +5,11 @@
 using namespace std;
 
 int main(){
+    Laboratorio l;
+    l.recuperar();
+
+    l.mostrar();
+    /*
     Laboratorio lb;
 
     Computadora c01 = Computadora("Alienware", "Windows 10", 16, 8);
@@ -16,6 +21,7 @@ int main(){
 
     Computadora c04;
     cin >> c04;
+    */
 
     /*
     c02.setNombre("HP");
@@ -36,12 +42,14 @@ int main(){
     lb.addComputadora(c04);
     */
 
-    lb << c01 << c02 << c03 << c04;
+    //lb << c01 << c02 << c03 << c04;
 
-    cout<<"Registros realizados"<<endl;
-    lb.mostrar();
+    //cout<<"Registros realizados"<<endl;
+    //lb.mostrar();
 
-    lb.respaldar_tabla();
-    lb.respaldar();
+
+
+   /* lb.respaldar_tabla();
+    lb.respaldar();*/
     return 0;
 }
